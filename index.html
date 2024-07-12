@@ -209,32 +209,35 @@
       <p>1) Create a new conda environment with the following command:</p>
     </div>
     <pre><code>
-      conda create --name GAIDRL python==3.10
+      conda create --name LLMGNN python==3.9
     </code></pre>
     <div class="content has-text-justified">
       <p>2) Activate the created environment with the following command:</p>
     </div>
     <pre><code>
-      conda activate GAIDRL
+      conda activate LLMGNN
     </code></pre>
     <div class="content has-text-justified">
       <p>3) Install the following packets using pip:</p>
     </div>
     <pre><code>
-      pip install gym==0.26.2
-      pip install torch==2.2.2
-      pip install matplotlib==3.8.4
-      pip install numpy==1.26.4
-      pip install scipy==1.13.0
+      pip install torch==1.13.1
+      pip install networkx==3.2.1
+      pip install torch-geometric==2.5.3
+      pip install torch_cluster==1.6.0
+      pip install torch_scatter==2.1.0
+      pip install torch_sparse==0.6.15
+      pip install torch_spline_conv==1.2.1
+      pip install matplotlib==3.9.0
+      pip install numpy==1.23.0
     </code></pre>
     <div class="content has-text-justified">
       <p>4) Run the different algorithm:</p>
     </div>
     <pre><code>
-      GAN-enhanced TD3: run GAN_TD3_simple.py;
-      VAE-enhanced TD3: run VAE_TD3.py;
-      Transformer-enhanced TD3: run Attention_TD3_double.py;
-      GDM-enhanced TD3: run mainDM3.py.
+      LLM+GNN: run LLM_GNN.py;
+      LLM+GAT: run LLM_GAT.py;
+      LLM+Node2Vec: run LLM_Node2Vec.py;
     </code></pre>
 
   </div>
@@ -247,8 +250,8 @@
       <h2 class="title">BibTeX</h2>
       
       <pre><code>@article{sun2024,
-        title={Generative AI for Deep Reinforcement Learning: Framework, Analysis, and Use Cases},
-        author={Geng Sun, Wenwen Xie, Dusit Niyato, Fang Mei, Jiawen Kang, Hongyang Du, Shiwen Mao},
+        title={Large Language Model (LLM)-enabled Graphs in Dynamic Networking},
+        author={Geng Sun, Yixian Wang, Jiacheng Wang, Xinying Wang, Dusit Niyato},
         journal={arXiv preprint arXiv:2405.20568},
         year={2024}
       }</code></pre>
