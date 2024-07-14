@@ -185,12 +185,12 @@
           <img src="static/images/NoLengend_Result.png" width="70%" alt="Case Study2"/>
         </div>
         <h2 class="subtitle has-text-centered">
-          The Experiment Result of GAI-enhanced TD3.
+          The Experiment Result of LLMs-enabled graphs.
         </h2>
         <h2 class="subtitle has-text-justified">
-          This figure shows the convergence curves of four GAI models-enhanced TD3 algorithm in different types of action space. <br>
-          We can observe that <b>GDM-based TD3</b> achieves the best performance compared to other GAI models. <br>
-          This is because GDM can accurately capture the underlying data distribution, which provides a more effective representation of the environment. Moreover, the unique structure of GDM, which involves a diffusion process, offers a more stable and efficient learning process.
+          This figure shows the experiment result of system performance. (a) The difference between the measurements and estimations. (b) The impact of task size at monitoring points on UAV remaining energy consumption. <br>
+          We can observe that the gap between the estimation and measurement values decreases as the number of training episodes increases. It is obvious that our proposed LLM+GNN outperforms LLM+Node2Vec and LLM+GAT.   <br>
+          Moreover, as the amount of data collected (i.e., task size) at monitoring points increases, the remaining energy consumption of the UAV gradually decreases. This is because that the UAV need to adjust its flight trajectory and allocate more resources to the monitoring points with a large amount of tasks, which results in the increased energy consumption. This enables UAV to gather more information and execute environmental monitoring operations accurately. Our proposed LLM+GNN performs more stable and reliable under various task sizes, which means that it is especially suitable for the heavy loaded and resource-limited UAV systems. The reason for this lies in the fact that LLM+GAT, while effective at dynamically allocating resources based on node importance, faces challenges with over-allocation as task sizes increase. Furthermore, LLM+Node2Vec performs well only at a task size of 5 MB, leveraging its ability to capture local and global network structures, optimize node proximity, and extract key information efficiently.
         </h2>
 
       </div>
